@@ -172,9 +172,12 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 
 4. Find products whose cost is less than or equal to $59.99.
 
-  
+  SELECT * FROM unemath_Finnerman.Products WHERE price <= 59.99;
 
 5. Find products whose ID is between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
+
+  
+
 6. Find products that are not between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
 7. Find products whose country code is NULL.
 
