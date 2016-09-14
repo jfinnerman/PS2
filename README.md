@@ -159,8 +159,17 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 ===
 
 1. Select all products (UPC) made in China whose price is less than $50.
+
+  SELECT upc FROM unemath_Finnerman.Products WHERE country='china' and msrp<50;
+  
 2. Find products with "bird bath" in the description.
+
+
+
 3. Find products whose cost is between $10 and $100.
+
+  SELECT *from unemath_Finnerman.Products WHERE price BETWEEN 10 AND 100;
+
 4. Find products whose cost is less than or equal to $59.99.
 5. Find products whose ID is between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
 6. Find products that are not between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
