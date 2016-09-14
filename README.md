@@ -164,16 +164,22 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
   
 2. Find products with "bird bath" in the description.
 
-
+  SELECT * FROM unemath_Finnerman.Products WHERE description like 'bird bath%';
 
 3. Find products whose cost is between $10 and $100.
 
   SELECT *from unemath_Finnerman.Products WHERE price BETWEEN 10 AND 100;
 
 4. Find products whose cost is less than or equal to $59.99.
+
+  
+
 5. Find products whose ID is between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
 6. Find products that are not between 5000 and 6000 or 7483, 4939, 3452, 9848, 11293, 12001.
 7. Find products whose country code is NULL.
+
+
+
 8. Calculuate the shipping volume and report it as 'Volume'.
 9. Suppose you want to have a 35% markup on all products and sales tax is 7.5%.  Determine the 'Sales Price' of each product.
 10. True or False: Both conditions when using the OR operator must be true.
