@@ -181,6 +181,9 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
   SELECT * FROM unemath_Finnerman.Products WHERE country='';
 
 8. Calculuate the shipping volume and report it as 'Volume'.
+
+  Select ship_depth*ship_width*ship_length AS 'Volume' From unemath_Finnerman.Products;
+
 9. Suppose you want to have a 35% markup on all products and sales tax is 7.5%.  Determine the 'Sales Price' of each product.
 10. True or False: Both conditions when using the OR operator must be true.
 11. What is the logical negation of the IN operator?
