@@ -188,11 +188,11 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 
 8. Calculuate the shipping volume and report it as 'Volume'.
 
-  Select ship_depth * ship_width * ship_length AS 'Volume' From unemath_Finnerman.Products;
+  SELECT ship_depth * ship_width * ship_length AS 'Volume' FROM unemath_Finnerman.Products;
 
 9. Suppose you want to have a 35% markup on all products and sales tax is 7.5%.  Determine the 'Sales Price' of each product.
 
-  SELECT 1.075*(1.35*msrp) AS sales_price FROM unemath_Finnerman.Products; 
+  SELECT price, round(1.35 * price+0.075 * (1.35*price),2) AS 'sales price' FROM unemath_Finnerman.Products;
 
 10. True or False: Both conditions when using the OR operator must be true.
 
@@ -200,7 +200,7 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 
 11. What is the logical negation of the IN operator?
 
-  
+  The logical negation of the IN operator is NOT.
 
 12. What is wrong with the folling statement: `SELECT * FROM Products WHERE price BETWEEN 10, 100;
 
