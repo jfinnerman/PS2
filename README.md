@@ -168,7 +168,7 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 
 3. Find products whose cost is between $10 and $100.
 
-  SELECT *from unemath_Finnerman.Products WHERE price BETWEEN 10 AND 100;
+  SELECT * FROM unemath_Finnerman.Products WHERE price BETWEEN 10 AND 100;
 
 4. Find products whose cost is less than or equal to $59.99.
 
@@ -204,7 +204,7 @@ SELECT 1.35*price AS `Sale Price` FROM Products;
 
 12. What is wrong with the folling statement: `SELECT * FROM Products WHERE price BETWEEN 10, 100;
 
-  The statement should be: SELECT * FROM unemath_Finnerman.Products WHERE price BETWEEN 10 and 100; It will not work with the comma. 
+  The statement should be: SELECT * FROM unemath_Finnerman.Products WHERE price BETWEEN 10 AND 100; It will not work with the comma. 
 
 13. Select products with length less than 12 inches and sort decsending.
 
